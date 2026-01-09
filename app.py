@@ -154,7 +154,7 @@ def ride_over_time_page():
                   y="Number of Rides", 
                   title="Number of Rides over Time")
 
-    st.plotly_chart(fig, width='content')
+    st.plotly_chart(fig, width='stretch')
 
 def ride_per_month_page():
     st.title("Number of Rides per Month")
@@ -170,7 +170,7 @@ def ride_per_month_page():
         ticktext=list(month_dict.values())
     )
 
-    st.plotly_chart(fig, width='content')
+    st.plotly_chart(fig, width='stretch')
 
 def ride_per_dow_page():
     st.title("Rides per Day of Week")
@@ -186,7 +186,7 @@ def ride_per_dow_page():
     
     fig.update_layout(showlegend=False) 
 
-    st.plotly_chart(fig, width='content')
+    st.plotly_chart(fig, width='stretch')
 
 def ride_per_hour_page():
     st.title("Rides per Hour")
@@ -202,7 +202,7 @@ def ride_per_hour_page():
         ticktext=[str(i) for i in range(0,24)]
     )
 
-    st.plotly_chart(fig, width='content')
+    st.plotly_chart(fig, width='stretch')
 
 def knn_page():
     st.title("KNN Clustering")
@@ -222,7 +222,7 @@ def knn_page():
         colorbar_ticktext=list(knn_cluster_mapping.values())
     )
     
-    st.plotly_chart(fig, width='content')
+    st.plotly_chart(fig, width='stretch')
 
 def dbscan_page():
     st.title("DBSCAN Clustering")
@@ -264,7 +264,7 @@ def dbscan_page():
         else:
             fig.update_layout(map=dict(zoom=9))
     
-    st.plotly_chart(fig, width='content')
+    st.plotly_chart(fig, width='stretch')
 
 ### Pages layout
 pages = {

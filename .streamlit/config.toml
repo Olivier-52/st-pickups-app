@@ -1,9 +1,6 @@
 [browser]
 serverAddress = "localhost"
 
-[global]
-dataFrameSerialization = "legacy"
-
 [theme]
 base="light"
 primaryColor="#000000ff"
